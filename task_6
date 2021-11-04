@@ -1,0 +1,8 @@
+def is_anagram(word1,word2):
+        a = len(word1)
+        b = len(word2)
+        if a == b:
+            for l in word1:
+                if l in word2:
+                    return True
+        return False
