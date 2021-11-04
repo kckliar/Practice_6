@@ -1,8 +1,7 @@
 def is_anagram(word1,word2):
-        a = len(word1)
-        b = len(word2)
-        if a == b:
-            for l in word1:
-                if l in word2:
-                    return True
-        return False
+    l1=list(word1)
+    l2=list(word2)
+    if sorted(l1) == sorted(l2):
+        print("Эти слова являются анаграммами")
+    else:
+        print("Эти слова не являются анаграммами")
